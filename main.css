@@ -1,0 +1,32 @@
+.encabezado__container{
+    background-color: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 40px;   
+}
+.encabezado__logo--icono{
+    max-width: 260px;
+}
+.menu__lista{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    color: var(--blanco);
+}   
+.menu__lista--item a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    padding: 0%;
+}
+

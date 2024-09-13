@@ -1,26 +1,30 @@
-.encabezado__container{
+.encabezado__container {
     background-color: var(--negro);
     width: 100%;
     padding: 40px 0;
 }
-.encabezado{
+
+.encabezado {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 40px;   
+    height: 40px;
 }
-.encabezado__logo--icono{
+
+.encabezado__logo--icono {
     max-width: 260px;
 }
-.menu__lista{
+
+.menu__lista {
     display: flex;
     gap: 40px;
     list-style-type: none;
     color: var(--blanco);
-}   
-.menu__lista--item a{
+}
+
+.menu__lista--item a {
     text-decoration: none;
     color: var(--blanco);
     font-size: 24px;
@@ -30,3 +34,29 @@
     padding: 0%;
 }
 
+
+.banner__wrapper {
+    margin: 0;
+}
+
+.banner__img {
+    max-width: 100%;
+    margin: 0;
+}
+
+
+
+.banner__descripcion {
+    max-width: 1200px;
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 110px auto;
+}
+    
+img {
+    max-width: 100%;
+}

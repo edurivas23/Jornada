@@ -56,7 +56,44 @@
     line-height: 150%;
     margin: 110px auto;
 }
-    
-img {
-    max-width: 100%;
+
+.titulo__seccion {
+    color: var(--grafito);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.titulo__seccion--subrayado {
+    width: 180px;
+    height: 4px;
+    background: var(--rojo);
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.footer {
+    background-color: var(--negro);
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--blanco);
+    max-width: 1200px;
+}
+
+.iconos__redes {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }

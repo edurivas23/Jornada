@@ -74,6 +74,100 @@
     margin-top: 16px;
 }
 
+.ofertas,
+.categorias,
+.destinos,
+.pagos,
+.testimonios{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.ofertas__tarjetas{
+
+    display: flex;  
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    padding: 40px 0;
+    margin-bottom: 200px;
+}
+
+.tarjeta__japon{
+   
+    background-image: url(./img/homepage/Japão.png);
+    padding:24px 0px;
+    color: var(--blanco);
+    width:34vw;
+    border-radius: 16px;
+    gap: 16px;
+    line-height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.tarjeta__andreas{
+
+    background-image: url(./img/homepage/San\ Andreas.png);
+    padding:24px 0px;
+    color: var(--blanco);
+    width:34vw;
+    border-radius: 16px;
+    line-height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.btn__detalles{
+    font-size: 1.2rem;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 16px 80px;
+    border-radius: 15px;
+    margin: 0 auto;
+
+}
+
+.categorias__container{
+
+    padding: 60px 0px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+
+
+}
+
+.tarjeta_categoria{ 
+    background-color: var(--gris-claro);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: 80%;
+    font-size: 24px;
+    justify-content: space-around;
+}
+
+
+.articulos__container{
+    display: flex;
+    padding: 60px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.footer__img {
+    display: flex;
+
+}
+
 .footer {
     background-color: var(--negro);
     width: 100%;

@@ -15,6 +15,7 @@
     />
   </head>
   <body>
+
     <header class="encabezado__container">
       <div class="encabezado">
         <a href="/" class="encabezado__logo" title="Página principal jornada">
@@ -46,10 +47,11 @@
       </div>
     </header>
     
-    
+        <!--Banner de la pagina y descripción breve sobre que trata la página-->
+
         <section class="banner">
         <figure class="banner__wrapper">
-          <img alt="Hombre en una canoa" src="./img/homepage/Banner.png" class="banner__img" />
+          <img alt="Hombre en una canoa" src="./img/homepage/Banner.png" style="width: 100%;" />
           <figcaption class="banner__descripcion">
             Somos una agencia apasionada por crear viajes inolvidables. Desde el
             destino hasta la selección de actividades, nos encargamos de todos
@@ -60,24 +62,26 @@
       </section>
 
       <main>
+
         <section class="ofertas">
           <div class="titulo__seccion">Ofertas de la Semana</div>
           <div class="titulo__seccion--subrayado"></div>
 
           <div class="ofertas__tarjetas">
-
+            
+           <!-- Tarjetas de viajes individuales -->
             <article class="tarjeta__japon" > 
               <p>HOTEL+AÉREO</p>
               <h1>Japón</h1>
-              <h2>$ 4000</h2>
+              <h2 style="margin-bottom: 15px;">$ 4000</h2>
               <a class="btn__detalles">Ver detalles</a>
             </article>
             
             <article class="tarjeta__andreas">
               <p>HOTEL+AÉREO</p>
               <h1>San Andreas</h1>
-              <h2>$ 3000</h2>
-              <a class="btn__detalles">Ver detalles</a>
+              <h2 style="margin-bottom: 15px;">$ 3000</h2>
+              <a class="btn__detalles" >Ver detalles</a>
             </article>
             
           </div>
@@ -87,6 +91,7 @@
           <div class="titulo__seccion">Busca por Categoría</div>
           <div class="titulo__seccion--subrayado"></div>
 
+            <!-- Categorías de viajes -->
           <div class="categorias__container">
             <div class="tarjeta_categoria">
               <img src="./img/homepage/ícone - pacotes nacionais.png" alt="icono de una persona con mochila"> </img>
@@ -113,32 +118,38 @@
         <section class="destinos">
           <div class="titulo__seccion">Destinos populares</div>
           <div class="titulo__seccion--subrayado"></div>
+
+          <!-- Artículos de destinos turísticos -->
         <div class="articulos__container">
           <article class="destino__elemento">
             <figure class="destino__elemento--img">
                 <img src="./img/homepage/Japão.png" alt="paisaje de la ciudad de tokyo" class=elemento__img>
                 <figcaption>
-                  <h3>Tokyo</h3>
+                  <h4 style="color: var(--grafito);
+                       font-size: 24px;">Tokyo</h4>
                   <p>Tóquio es una ciudad vibrante y cosmopolita, con sus templos históricos,
                      museos de arte moderno y rascacielos icónicos. No pierdas la oportunidad
                       de sumergirte en su fascinante atmósfera.</p>
-                      <a class="btn__detalles">Ver detalles</a>
+                      
                 </figcaption>  
             </figure>
+            <a class="btn__detalles"  >Ver detalles</a>
           </article>
 
-          <article class="destino__elemento"></article>
+          <article class="destino__elemento">
             <figure class="destino__elemento--img">
-                <img src="./img/homepage/Japão.png" alt="paisaje de la ciudad de tokyo" class=elemento__img>
+                <img src="./img/homepage/Destinos Osaka.jpg" alt="paisaje de la ciudad de tokyo" class=elemento__img>
                 <figcaption>
-                  <h3>Osaka</h3>
-                  <p> Osaka es una ciudad animada y moderna en Japón.
+                  <h4 style="color: var(--grafito);
+                       font-size: 24px;">Osaka</h4>
+                  <p > Osaka es una ciudad animada y moderna en Japón.
                     La ciudad es famosa por su deliciosa gastronomía 
                     y por ser un excelente punto de partida para explorar
                      otras ciudades japonesas cercanas.</p>
-                     <a class="btn__detalles">Ver detalles</a>
+                    
                 </figcaption>  
             </figure>
+            <a class="btn__detalles"  >Ver detalles</a>
           </article>
         </div>
         </section>
@@ -148,10 +159,11 @@
           <div class="titulo__seccion">Condiciones de pago</div>
           <div class="titulo__seccion--subrayado"></div>
 
+           <!-- Ofertas y promociones especiales--> 
           <div class="condiciones__container">
             <aside>
               <h2 style="color: var(--grafito);">"¡Pago a plazos de hasta 12 cuotas"</h2>
-              <p>Viaja pagando en hasta 12 cuotas con tarjeta, al contado en crédito con un descuento del 5% ¡o !</p>
+              <p style="margin-top: 20px;">Viaja pagando en hasta 12 cuotas con tarjeta, al contado en crédito con un descuento del 5% ¡o !</p>
             </aside>
             <figure> <img src="./img/homepage/Montagem.png" alt="dos personas de espaldas en un puente"> </figure>
           </div>
@@ -162,13 +174,14 @@
         <div class="titulo__seccion">Testimonios</div>
         <div class="titulo__seccion--subrayado"></div>
 
+          <!--Reseñas sobre la página-->
         <div class="opiniones__container">
             <div class="opinion">
             <p>La Jornada ha sido una de las mejores agencias de viajes que he experimentado.
                El servicio al cliente fue excepcional,
                 y todo el equipo fue muy atento y servicial.</p>
 
-            <figure class="opinion__foto"> <img src="./img/homepage/Avatar-Talita.png" alt="foto de una mujer"> </figure>
+            <figure class="opinion__foto"> <img src="./img/homepage/Avatar-Talita.png" alt="foto de una mujer"> 
             <div class="rating__container">
                 <h3>Ana Lópes</h3>
                 <figure class="rating">
@@ -186,7 +199,7 @@
                    Ofrecen un servicio personalizado y
                     de alta calidad que superó mis expectativas en mi último viaje.</p>
     
-                <figure class="opinion__foto"> <img src="./img/homepage/Avatar-Amari.png" alt="foto de una hombre"> </figure>
+                <figure class="opinion__foto"> <img src="./img/homepage/Avatar-Amari.png" alt="foto de una hombre">
                 <div class="rating__container">
                     <h3>Amari Salin</h3>
                     <figure class="rating">
@@ -206,7 +219,7 @@
                    Te la recomiendo mucho si buscas una experiencia emocionante
                     y personalizada.</p>
     
-                <figure class="opinion__foto"> <img src="./img/homepage/Avatar-Lauro.png" alt="foto de una hombre"> </figure>
+                <figure class="opinion__foto"> <img src="./img/homepage/Avatar-Lauro.png" alt="foto de una hombre"> 
                 <div class="rating__container">
                     <h3>Lauro B. Matos</h3>
                     <figure class="rating">
@@ -220,12 +233,15 @@
               </div>
             </div>
             </div>
+          
 
-        </div>
+          </main>
       </section>
       <section class="footer__img">
-        <img src="./img/homepage/Imagem pré rodapé.png" alt="paisaje de un pueblo a la orilla del mar">
+        <img src="./img/homepage/Imagem pré rodapé.png" alt="paisaje de un pueblo a la orilla del mar"  style="width: 100%;">
       </section>
+
+      <!--Horarios disponibles y redes sociales-->
       <footer class="footer">
         <div class="footer__container">
         <div class="informacion">
@@ -243,6 +259,6 @@
       </div>
       
       </footer>
-    </main>
+    
   </body>
 </html>

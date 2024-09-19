@@ -1,3 +1,5 @@
+/* Barra de navegación */
+
 .encabezado__container {
     background-color: var(--negro);
     width: 100%;
@@ -11,7 +13,7 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 40px;
-    
+
 }
 
 .encabezado__logo--icono {
@@ -35,26 +37,52 @@
     padding: 0%;
 }
 
+/*  pie de pagina */
 
-.banner__wrapper {
-    margin: 0;
+.footer__img {
+    display: flex;
+
 }
 
+.footer {
+    background-color: var(--negro);
+    width: 100%;
+    padding: 40px 0;
+}
 
-.banner__descripcion {
+.footer__container {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--blanco);
     max-width: 1200px;
-    color: var(--grafito, #222);
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    margin: 110px auto;
+    line-height: 2.5;
 }
 
+.iconos__redes {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    
+}
+.icono{
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+.icono:hover{
+    transform: scale(1.2);
+}
+
+/* titulos de secciones*/
 .titulo__seccion {
     color: var(--grafito);
-    font-size: 32px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -73,14 +101,35 @@
 .categorias,
 .destinos,
 .pagos,
-.testimonios{
-    max-width:1200px;
+.testimonios,
+.viaje,
+.recomendaciones {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.ofertas__tarjetas{
+/*  Homepage (index.html) */
 
-    display: flex;  
+.banner__wrapper {
+    margin: 0;
+}
+
+
+.banner__descripcion {
+    max-width: 1200px;
+    color: var(--grafito, #222);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 110px auto;
+}
+
+
+.ofertas__tarjetas {
+
+    display: flex;
     justify-content: center;
     text-align: center;
     gap: 24px;
@@ -88,12 +137,12 @@
 
 }
 
-.tarjeta__japon{
-   
+.tarjeta__japon {
+
     background-image: url(./img/homepage/Japão.png);
-    padding:24px 0px;
+    padding: 24px 0px;
     color: var(--blanco);
-    width:34vw;
+    width: 34vw;
     border-radius: 16px;
     line-height: 2;
     background-position: center;
@@ -102,21 +151,21 @@
 }
 
 
-.tarjeta__andreas{
+.tarjeta__andreas {
 
     background-image: url(./img/homepage/San\ Andreas.png);
-    padding:24px 0px;
+    padding: 24px 0px;
     color: var(--blanco);
-    width:34vw;
+    width: 34vw;
     border-radius: 16px;
     line-height: 2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-.btn__detalles{
+.btn__detalles {
     font-size: 1.2rem;
     background-color: var(--rojo);
     color: var(--blanco);
@@ -125,13 +174,15 @@
     cursor: pointer;
     margin-top: 30px;
     transition: 0.3s;
+    font-weight: 700;
 
 }
-.btn__detalles:hover{
-    filter: brightness(1.1);
+
+.btn__detalles:hover {
+    filter: brightness(1.2);
 }
 
-.categorias__container{
+.categorias__container {
 
     padding: 60px 0px;
     display: flex;
@@ -141,7 +192,7 @@
     text-align: center;
 }
 
-.tarjeta_categoria{ 
+.tarjeta_categoria {
     background-color: var(--gris-claro);
     padding: 30px;
     display: flex;
@@ -154,87 +205,156 @@
 }
 
 
-.articulos__container{
+.articulos__container {
     display: flex;
     padding: 100px 0px;
     text-wrap: balance;
     line-height: 2;
     margin: 0 auto;
     gap: 48px;
-    
+    font-size: 1.2rem;
+
 }
-.destino__elemento{
+
+.destino__elemento {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0 auto;
 }
-.destino__elemento--img{
+
+.destino__elemento--img {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.elemento__img{
+
+.elemento__img {
     width: 100%;
     height: 450px;
     padding-bottom: 15px;
 }
 
-.condiciones__container{
+.condiciones__container {
     display: flex;
     padding: 100px 0px;
     text-wrap: balance;
     line-height: 1.5;
+    font-size: 1.2rem;
 }
 
-.opiniones__container{
+.opiniones__container {
     display: flex;
     line-height: 2;
     padding: 60px 0;
     text-wrap: pretty;
-   
-    
+
+
 }
-.opinion__foto{
+
+.opinion__foto {
     display: flex;
     padding-top: 20px;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.rating__container{
+
+.rating__container {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.footer__img {
-    display: flex;
 
+/*  página blog */
+
+.blog__banner{
+    background-image: url(/img/blog/Banner\ Blog.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 620px;
+    margin-bottom: 100px;
+    
 }
-
-.footer {
-    background-color: var(--negro);
-    width: 100%;
-    padding: 50px 0;
-}
-
-.footer__container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
-    color: var(--blanco);
+.blog__banner--container{
     max-width: 1200px;
-    line-height: 2.5;
+    margin: 0 auto;
+    display: flex;
+    height: 620px;
+    align-items: center;   
+   }
+
+.blog__texto{
+    max-width: 500px;
+    line-height: 2;
+    color: var(--blanco);
 }
 
-.iconos__redes {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-   
+.blog__banner--titulo h1{
+    margin-bottom: 5px;
+    font-size: 3rem;
 }
+.blog__banner--subrayado{
+  background-color: var(--rojo);
+  height: 4px;
+  width: 170px;
+  margin-bottom: 20px;
+    
+}
+
+.descripcion__banner{
+    text-wrap: pretty;
+    font-size: 1.7rem;
+}
+
+.informacion__viaje{
+    padding: 60px 0px;
+    line-height: 1.5;
+    text-wrap: pretty;
+
+}
+.informacion__viaje h4 {
+    font-size: 2rem;
+    padding: 10px 0px;
+    color: var(--grafito);
+}
+
+.informacion__viaje p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.informacion__viaje--vuelo{
+    display: flex;
+    gap: 24px;
+    padding-bottom: 28px;
+}
+.informacion__viaje--elemento{
+    padding-bottom: 28px;
+}
+.recomendaciones__container{
+    display: flex;
+    padding: 60px 0px;
+    gap: 16px;
+    line-height:1.5;
+    font-size: 1.2rem; 
+}
+.recomendaciones__container h3{
+    font-size: 2rem;
+    color: var(--grafito);
+}
+.recomendaciones__elemento{
+    display: flex;
+    flex-direction: column;
+   align-items: start;
+}
+.recomendaciones__elemento img{
+    width: auto;
+    height: auto;
+    
+}
+
+/* Página destino*/
+

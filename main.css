@@ -37,6 +37,10 @@
     padding: 0%;
 }
 
+.menu__lista--item a:hover{
+    color: var(--corinto);
+}
+
 /*  pie de pagina */
 
 .footer__img {
@@ -51,7 +55,7 @@
 }
 
 .footer__container {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -103,9 +107,72 @@
 .pagos,
 .testimonios,
 .viaje,
-.recomendaciones {
+.recomendaciones,
+.contacto {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+.blog__banner--container,
+.destino__banner--container,
+.contacto__banner--container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 620px;
+    align-items: center;   
+   }
+
+.blog__texto,
+.destino__texto,
+.contacto__texto{
+  width: 600px;
+  height: auto;
+    color: var(--blanco);
+}
+
+.blog__banner--titulo h1,
+.destino__banner--titulo h1,
+.contacto__banner--titulo h1{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 3rem;
+
+}
+.blog__banner--subrayado,
+.destino__banner--subrayado,
+.contacto__banner--subrayado{
+  background-color: var(--rojo);
+  height: 4px;
+  width: 170px;
+  margin-bottom: 20px;
+    
+}
+
+.descripcion__banner{
+    text-wrap: pretty;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 150%;
+}
+
+/* boton "ver detalles" */
+.btn__detalles {
+    font-size: 1.25rem;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 16px 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+    font-weight: 700;
+
+}
+
+.btn__detalles:hover {
+    filter: brightness(1.2);
 }
 
 /*  Homepage (index.html) */
@@ -165,23 +232,6 @@
 
 }
 
-.btn__detalles {
-    font-size: 1.2rem;
-    background-color: var(--rojo);
-    color: var(--blanco);
-    padding: 16px 80px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition: 0.3s;
-    font-weight: 700;
-
-}
-
-.btn__detalles:hover {
-    filter: brightness(1.2);
-}
-
 .categorias__container {
 
     padding: 60px 0px;
@@ -212,7 +262,7 @@
     line-height: 2;
     margin: 0 auto;
     gap: 48px;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 
 }
 
@@ -240,19 +290,32 @@
     padding: 100px 0px;
     text-wrap: balance;
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+}
+.condiciones__container h4{
+    color: var(--grafito);
+    margin: 0;
+    font-size: 1.75rem;
 }
 
 .opiniones__container {
     display: flex;
     line-height: 2;
-    padding: 60px 0;
+    padding: 100px 0;
     text-wrap: pretty;
-
+    gap: 16px;
 
 }
+.opinion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 400px;
 
+}
 .opinion__foto {
+
     display: flex;
     padding-top: 20px;
     justify-content: center;
@@ -263,6 +326,7 @@
 .rating__container {
     text-align: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 16px;
 }
@@ -274,39 +338,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 620px;
     margin-bottom: 100px;
     
-}
-.blog__banner--container{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    height: 620px;
-    align-items: center;   
-   }
-
-.blog__texto{
-    max-width: 500px;
-    line-height: 2;
-    color: var(--blanco);
-}
-
-.blog__banner--titulo h1{
-    margin-bottom: 5px;
-    font-size: 3rem;
-}
-.blog__banner--subrayado{
-  background-color: var(--rojo);
-  height: 4px;
-  width: 170px;
-  margin-bottom: 20px;
-    
-}
-
-.descripcion__banner{
-    text-wrap: pretty;
-    font-size: 1.7rem;
 }
 
 .informacion__viaje{
@@ -322,7 +355,7 @@
 }
 
 .informacion__viaje p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     padding-bottom: 20px;
 }
 
@@ -339,7 +372,7 @@
     padding: 60px 0px;
     gap: 16px;
     line-height:1.5;
-    font-size: 1.2rem; 
+    font-size: 1.25rem; 
 }
 .recomendaciones__container h3{
     font-size: 2rem;
@@ -358,3 +391,125 @@
 
 /* Página destino*/
 
+
+.destino__banner{
+    background-image: url(/img/destino/Banner\ Destinos\ Japão.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    
+}
+
+.pago__container{
+    display: flex;
+    padding: 100px 0px;
+    text-wrap: balance;
+    text-wrap: pretty;
+    line-height: 1.5;
+    align-items: center;
+    gap: 48px;
+}
+.pago__container h1{
+    color: var(--grafito);
+    margin: 0;
+    font-size: 2.5rem;
+}
+.pago__container h4{
+    color: var(--grafito);
+    margin: 0;
+    font-size: 1.75rem;
+}
+.pago__container p{
+    font-size: 1.25rem;
+}
+
+
+/* Página Contacto */
+
+.contacto__banner{
+    background-image: url(/img/contacto/Banner\ Contato.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.contacto__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 48px;
+    line-height: 1.5;
+    
+}
+.contacto__container p{
+    text-align: center;
+}
+.info__personal{
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.info__personal input{
+   width: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+   width: 790px;
+
+}
+
+.formulario input{
+    border: 0px solid var(--gris-claro);
+    border-bottom-width: 2px;
+    padding: 20px 10px;
+
+}
+
+.formulario input::placeholder{
+    color: var(--gris-oscuro);
+}
+.formulario input:focus{
+    border: 0px solid var(--rojo);
+    border-bottom-width: 2px;
+    outline:none;
+   
+}
+.formulario input:focus::placeholder{
+    color: var(--negro);
+}
+.formulario label{
+    margin-top: 32px;
+    padding: 0px 10px;
+    color: var(--gris-oscuro);
+
+}
+.formulario label{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label:focus-within{
+    color: var(--negro);
+}
+
+.formulario textarea{
+    border: 2px solid var(--gris-claro);
+    resize: none;
+    border-radius: 5px;
+    min-height:200px;
+    height: auto;
+    padding: 10px;
+}
+.formulario textarea:focus{
+    border: 2px solid var(--rojo);
+    outline: none;
+}
+
+.formulario .btn__detalles{
+    border: none;
+    padding: 16px 80px; ;
+    margin: 20px auto;
+}
